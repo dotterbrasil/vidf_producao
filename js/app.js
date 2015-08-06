@@ -131,7 +131,7 @@ do{
 	startScan();
 	if (contador == qtde_maxima) {alert(texto_alerta);}
 
-} while((contador<qtde_maxima+1)&&(anterior!=document.getElementById("texto").value));
+} while((contador<(qtde_maxima+1))&&(anterior!=document.getElementById("texto").value));
 
 }
 
