@@ -119,21 +119,6 @@ function startScan() {
 
 }
 
-function multiple_scan(){
-
-	var contador = 1;
-	var qtde_maxima = 3;
-	var texto_alerta = "Quantidade Maxima por upload! Efetue o Registro!";
-
-do{
-	startScan();
-	if (contador == qtde_maxima) {alert(texto_alerta);}
-
-}
-while(contador<(qtde_maxima+1));
-
-}
-
 
 
 function identifica() {
