@@ -97,7 +97,9 @@ function startScan() {
 
 	var scanner = cordova.require("cordova/plugin/BarcodeScanner");
 	var aux = "";
+	var contador = 1;
 
+do{
 	scanner.scan(
 		function (result) {
 						
@@ -116,13 +118,13 @@ function startScan() {
 		}
 	);
 
+	contador++;
+
+} while ((result.text!="")&&(contador<3));
+
 }
 
-function multiple_scan() {
 
-for (leituras=1;leituras<3;leituras++) {
-	startScan();
-}
 
 }
 
