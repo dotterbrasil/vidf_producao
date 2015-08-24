@@ -37,9 +37,9 @@ if (n.indexOf(";")>0) {
 
 	}
 
-else {	
+else {	alert(n);
 
-	n = n.substring(1,n.length);
+	n = n.substring(1,n.length);alert(n)
 
 	for (i=0;i<5;i++) {
 		if ((n.substring(0,1)==separador)||(n.substring(0,1)==inicio)) {n = n.substring(1,n.length);}
@@ -50,6 +50,8 @@ else {
 		fim_de_campo = n.indexOf(separador);
 
 		if(fim_de_campo<0){fim_de_campo = n.length;}
+
+alert(n);
 		switch(campo)
 			{
 		case "01":
