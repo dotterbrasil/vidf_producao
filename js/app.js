@@ -39,6 +39,8 @@ if (n.indexOf(";")>0) {
 
 else {	
 
+	n = n.substring(1,n.length);
+
 	for (i=0;i<5;i++) {
 		if ((n.substring(0,1)==separador)||(n.substring(0,1)==inicio)) {n = n.substring(1,n.length);}
 
