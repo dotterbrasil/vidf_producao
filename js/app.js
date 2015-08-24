@@ -39,11 +39,11 @@ if (n.indexOf(";")>0) {
 
 	}
 
-else {	alert(n);
+else {	
 
 	if ((n.substring(0,1)==caracter_bug)) {n = n.substring(1,n.length);}
 
-	n = n.substring(1,n.length);alert(n)
+	n = n.substring(1,n.length);
 
 	for (i=0;i<5;i++) {
 		if ((n.substring(0,1)==separador)||(n.substring(0,1)==inicio)) {n = n.substring(1,n.length);}
@@ -55,7 +55,7 @@ else {	alert(n);
 
 		if(fim_de_campo<0){fim_de_campo = n.length;}
 
-alert(n);
+
 		switch(campo)
 			{
 		case "01":
